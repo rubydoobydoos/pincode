@@ -51,6 +51,7 @@ function initialize() {
 
 $("#pin").bind("keyup",function(e){
   val = $("#pin").val();
+
   var bounds = new google.maps.LatLngBounds();
   if(!isNaN(val)){
     for(var key in markers){
